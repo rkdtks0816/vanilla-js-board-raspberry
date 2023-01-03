@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자유 게시판</title>
+    <link rel="stylesheet" href="/static/css/css.css">
+	<script src="/static/libs/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div class="SignUp_wrap">
+        <div class="SignUp_title">
+                <strong>회원가입</strong>
+        </div>
+        <div class="SignUp_form_wrap">
+            <div class="SignUp_form">
+                <div class="UserNameForm">
+                    <dl>
+                        <dt>이름</dt>
+                        <dd><input type="text" id="UserName"></dd>
+                    </dl>
+                </div>
+                <div class="NickNameForm">
+                    <dl>
+                        <dt>닉네임</dt>
+                        <dd><input type="text" id="NickName" placeholder="2 ~ 20 글자"></dd>
+                    </dl>
+                </div>
+                <div class="UserIDForm">
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd><input type="text" id="UserID" placeholder="2 ~ 20 글자"></dd>
+                    </dl>
+                </div>
+                <div class="UserPasswordForm">
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd><input type="password" id="UserPassword" placeholder="2 ~ 20 글자"></dd>
+                    </dl>
+                </div>
+                <div class="UserPasswordCheckForm">
+                    <dl>
+                        <dt>비밀번호 확인</dt>
+                        <dd><input type="password" id="UserPasswordCheck" placeholder="비밀번호를 똑같이 입력해 주세요."></dd>
+                    </dl>
+                </div>
+                <div class="UserEmailForm">
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd><input type="text" id="UserEmail"></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="SingUpbt_wrap">
+                <a onclick="CheckSignUp()" class="SingUpbt">회원가입</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/address.js"></script>
+<script src="/static/js/apicall.js"></script>

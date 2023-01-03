@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자유 게시판</title>
+    <link rel="stylesheet" href="/static/css/css.css">
+	<script src="/static/libs/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div class="board_wrap">
+        <div class="board_title">
+            <div class="board_title_text">
+                <strong>자유 게시판</strong>
+            </div>
+            <div class="login">
+            </div>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input type="text" id="PostTitle" placeholder="제목 입력"></dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea id="PostContent" placeholder="내용 입력"></textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a onclick="CreatPost()" class="on">등록</a>
+                <a href="/">취소</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/paging.js"></script>
+<script src="/static/js/address.js"></script>
+<script src="/static/js/apicall.js"></script>
